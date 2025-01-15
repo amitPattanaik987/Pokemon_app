@@ -10,4 +10,4 @@ class Pokemon(Base):
     weight = Column(Integer, nullable=False)
     base_experience = Column(Integer, nullable=False)
     abilities = Column(JSON, nullable=False)
-    image = Column(String, nullable=True)  # New column for image URL
+    image = Column(String, nullable=True)
