@@ -4,21 +4,18 @@ from sqlalchemy.orm import Session
 from . import models, schemas, crud
 from .database import engine, Base, get_db
 
-# Create tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# CORS setup
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Allow only your frontend URL
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-# Routes for the Pokémon CRUD operations
 @app.get("/pokemons", response_model=list[schemas.Pokemon])
 def read_pokemons(db: Session = Depends(get_db)):
     return crud.get_pokemons(db)
