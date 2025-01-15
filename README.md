@@ -7,15 +7,17 @@ This is a full-stack Pokémon management system that allows you to fetch, add, u
 - Built using Python, FastAPI, SQLAlchemy, and Pydantic.
 - Fetches Pokémon data from the PokeAPI and stores it in a PostgreSQL/SQLite database.
 - Run the backend:
-  bash
-  python -m venv venv
-  .\venv\Scripts\activate
-  pip install uvicorn
-  pip install fastapi[all]
-  pip install sqlalchemy
-  pip install psycopg2-binary
-  CREATE .env FILE AND PUT DATABASE_URL=postgresql+psycopg2://pokemon_user:amit1234@localhost/pokemon_db 
-  uvicorn main:app --reload
+ ```bash
+python -m venv venv
+.\venv\Scripts\activate
+pip install uvicorn
+pip install fastapi[all]
+pip install sqlalchemy
+pip install psycopg2-binary
+# Create a .env file and add the following:
+# DATABASE_URL=postgresql+psycopg2://pokemon_user:amit1234@localhost/pokemon_db
+uvicorn main:app --reload
+```
 
   Swagger UI is available at: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
@@ -23,11 +25,11 @@ This is a full-stack Pokémon management system that allows you to fetch, add, u
 - Built using React with TypeScript and Axios.
 - Also used Bootstrap ui for designing
 - Run the frontend:
-  bash
+  ```bash
   npm i
   npm start
   make sure the Frontend is running in Localhost:3000 (To avoid cors issues)
-  
+  ```
 
 ## Tech Stack
 - Backend: FastAPI, SQLAlchemy, PostgreSQL, Pydantic
