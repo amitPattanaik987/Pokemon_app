@@ -1,0 +1,66 @@
+/* Main Container Styling */
+.main-container {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+.imgofpokemon {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pokémon Image Styling */
+.imgofpokemon {
+  max-width: 100%;
+  border: 5px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the text part */
+.textpart {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #ffffff, #e6e9f0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Name Section Styling */
+.name-section h1 {
+  color: #ff6f61;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Details Section Styling */
+.details-section h5 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail-item {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Abilities Section */
+.abilities-section h5 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ability-badge {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+/* Buttons Section */
+.button-section .btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}

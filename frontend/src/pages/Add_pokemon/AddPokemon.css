@@ -1,0 +1,86 @@
+.add-pokemon-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-pokemon-form h2 {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .add-pokemon-form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .add-pokemon-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .add-pokemon-form input:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 4px rgba(30, 136, 229, 0.5);
+  }
+  
+  .add-pokemon-form button {
+    padding: 12px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .add-pokemon-form button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+  }
+  
+  .add-pokemon-form button:active {
+    background-color: #0d47a1;
+    transform: scale(1);
+  }
+  
+  .add-pokemon-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-pokemon-form input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .add-pokemon-form {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .add-pokemon-form input,
+    .add-pokemon-form button {
+      font-size: 14px;
+    }
+  }
+  

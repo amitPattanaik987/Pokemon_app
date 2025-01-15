@@ -1,0 +1,30 @@
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(186, 190, 240);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .pokemon-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pokemon-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pokemon-container {
+      gap: 15px; /* Reduce gap for very small screens */
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+  }
+  

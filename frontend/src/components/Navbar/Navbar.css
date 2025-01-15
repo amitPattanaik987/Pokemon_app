@@ -1,0 +1,76 @@
+.custom-navbar {
+    padding: 0 20px;
+    gap: 100px;
+    background-color: rgb(232, 227, 227) !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row; /* Keep items in a single row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  .nav-item {
+    cursor: pointer;
+  }
+  
+  .nav-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {
+    .custom-navbar {
+      gap: 70px; /* Decrease gap for smaller screens */
+    }
+  
+    .navbar-content {
+      flex-wrap: nowrap; /* Ensure no wrapping for the entire content */
+      overflow-x: auto; /* Add horizontal scrolling for smaller screens */
+    }
+  
+    .navbar-nav {
+      gap: 15px; /* Reduce spacing between nav items */
+      overflow-x: auto; /* Horizontal scrolling for the list items */
+    }
+  
+    .nav-input {
+      gap: 8px; /* Adjust input gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-navbar {
+      gap: 50px; /* Further decrease gap for even smaller screens */
+    }
+  
+    .navbar-nav {
+      gap: 10px; /* Further reduce spacing between nav items */
+    }
+  
+    .nav-input {
+      gap: 5px; /* Adjust input gap */
+    }
+  }
+  
