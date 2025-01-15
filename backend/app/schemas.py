@@ -7,7 +7,7 @@ class PokemonBase(BaseModel):
     weight: int
     base_experience: int
     abilities: List[str]
-    image: Optional[str]  # New field for image URL (optional)
+    image: Optional[str]
 
 class PokemonCreate(PokemonBase):
     pass
